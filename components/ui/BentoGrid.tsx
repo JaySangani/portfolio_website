@@ -6,7 +6,6 @@ import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
-
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
@@ -37,7 +36,7 @@ export const BentoGridItem = ({
   id,
   title,
   description,
-  //   remove unecessary things here
+  // remove unnecessary things here
   img,
   imgClassName,
   titleClassName,
@@ -80,8 +79,8 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        //   add these two
-        //   you can generate the color from here https://cssgradient.io/
+        // add these two
+        // you can generate the color from here https://cssgradient.io/
         background: "rgb(4,7,29)",
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
@@ -106,7 +105,7 @@ export const BentoGridItem = ({
             <img
               src={spareImg}
               alt={spareImg}
-              //   width={220}
+              // width={220}
               className="object-cover object-center w-full h-full"
             />
           )}
@@ -171,7 +170,7 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
+              {/* button border magic from tailwind css buttons */}
               {/* add rounded-md h-8 md:h-8, remove rounded-full */}
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}

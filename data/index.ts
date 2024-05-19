@@ -1,14 +1,14 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I prioritize data-driven solutions, ensuring impactful insights.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Flexible with time zone communications to ensure seamless collaboration.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -28,8 +28,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "My tech stack includes R, Python, SQL, Tableau, and Power BI.",
+    description: "Constantly improving and staying updated with the latest tools.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Data enthusiast with a passion for analytics.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -46,10 +46,9 @@ export const gridItems = [
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently working on a data visualization project.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -59,7 +58,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Interested in starting a project together?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -72,69 +71,46 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Customer Segmentation Analysis",
+    des: "Performed customer segmentation analysis using R and Python to identify key customer groups and enhance marketing strategies.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    iconLists: ["/r.svg", "/python.svg", "/sql.svg", "/tableau.svg"],
+    link: "/ui.customer.com",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Sales Dashboard Development",
+    des: "Developed an interactive sales dashboard using Tableau to provide real-time insights into sales performance and trends.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    iconLists: ["/tableau.svg", "/sql.svg"],
+    link: "/ui.sales.com",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Predictive Analytics Project",
+    des: "Implemented predictive models using Python and R to forecast sales and optimize inventory levels.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    iconLists: ["/python.svg", "/r.svg", "/sql.svg"],
+    link: "/ui.analytics.com",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Marketing Campaign Analysis",
+    des: "Analyzed the effectiveness of marketing campaigns using data visualization techniques in Power BI.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    iconLists: ["/powerbi.svg", "/sql.svg"],
+    link: "/ui.marketing.com",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Jay was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Jay's enthusiasm for data analytics truly stands out. If you're seeking to elevate your data strategy, Jay is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+  // Add more testimonials as needed
 ];
 
 export const companies = [
@@ -164,7 +140,7 @@ export const companies = [
   },
   {
     id: 5,
-    name: "docker.",
+    name: "docker",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
@@ -173,29 +149,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Team Member at Woolworths Metro",
+    desc: "Delivered exceptional customer service by assisting customers with their purchases and inquiries. Optimized stock levels, ensured shelves are well-stocked and organized, processed transactions accurately at the cash registers, maintained a clean and safe work environment, and collaborated with team members to achieve store targets and enhance customer satisfaction.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Logistics Analyst & Accountant at Lorry Arrangers",
+    desc: "Analyzed data, coordinated with carriers, reported shipment costs, inspected shipments, managed orders, tracked inventory, processed payments, and billed transportation efficiently. Compiled inventory tracking records and business reports.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Front Manager at Temptation Cafe",
+    desc: "Managed customer billing efficiently and accurately, upheld hygiene standards by maintaining clean and organized dining areas, restocked condiment dispensers, napkins, silverware, and drink machines to prevent shortages, arranged and prepared tables for customers, offering memorable experiences and fostering repeat business, provided top-notch, personal service to boost sales and customer satisfaction.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Event Management Head at G.H. Raisoni University",
+    desc: "Led and executed campus events, enhancing student engagement, directed a student team, delegating tasks efficiently, increased the orientation budget by 18% through effective planning and resource management, resulting in a budget increase to ₹6,60,000. Organized a cricket tournament for new students, fostering community and sportsmanship.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -205,13 +181,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/JaySangani",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://twitter.com/JaySangani",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/sangani-jay",
   },
 ];
