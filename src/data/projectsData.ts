@@ -1,6 +1,7 @@
 export const projectsData = [
   {
     title: "Fine Default Prediction Model",
+    slug: "fine-default-prediction-model",
     org: "Department of Government Services",
     orgUrl: "#",
     description:
@@ -9,6 +10,7 @@ export const projectsData = [
   },
   {
     title: "Water Availability Forecasting",
+    slug: "water-availability-forecasting",
     org: "Monash University",
     orgUrl: "#",
     description:
@@ -17,6 +19,7 @@ export const projectsData = [
   },
   {
     title: "Event Management Lead",
+    slug: "event-management-lead",
     org: "G.H. Raisoni University",
     orgUrl: "#",
     description:
