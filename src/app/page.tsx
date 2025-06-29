@@ -6,6 +6,7 @@ import { useState, useRef } from "react";
 import Skills from "@/components/Skills";
 import ProjectsSection from "@/components/ProjectsSection";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Home() {
   const [showEmail, setShowEmail] = useState(false);
@@ -37,7 +38,7 @@ export default function Home() {
         className="w-full flex flex-col items-center mt-16 mb-10"
       >
         <h1 className="text-4xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-3">
-          Hi, I'm Jay Sangani
+          Hi, I&apos;m Jay Sangani
         </h1>
         <p className="text-xl md:text-2xl text-slate-200 mb-5 text-center max-w-2xl">
           Business Analytics Graduate | Data Enthusiast
@@ -103,22 +104,31 @@ export default function Home() {
         className="w-full flex flex-col items-center mt-20 mb-16"
       >
         {/* Big Profile Image */}
-        <img
+        <Image
           src="/jay_avatar.jpg"
           alt="Jay Sangani"
+          width={240} // or whatever size you want
+          height={240}
           className="w-40 h-40 md:w-60 md:h-60 rounded-full object-cover border-4 border-blue-400 shadow-4xl -mt-22"
           style={{ background: "#1e293b" }}
+          priority // optional: for fast loading
         />
 
         {/* Below the photo section / summary */}
         <div className="flex flex-col items-center mt-4">
           {/* Tagline / Roles */}
           <div className="text-lg md:text-xl font-semibold text-blue-200 mb-2">
-            Business Analyst 👨🏻‍💻 | Data Storyteller 📊 | Monash University Alum 🎓
+            Business Analyst 👨🏻‍💻 | Data Storyteller 📊 | Monash University Alum
+            🎓
           </div>
           {/* 3-Line Summary */}
           <div className="text-base md:text-lg text-slate-300 text-center max-w-2xl mb-2">
-            <span className="font-bold text-white">Passionate</span> about translating complex data into actionable business insights. <span className="font-bold text-white">Experienced</span> in analytics, automation, and stakeholder engagement. <span className="font-bold text-white">Always</span> seeking new challenges to make a real-world impact.
+            <span className="font-bold text-white">Passionate</span> about
+            translating complex data into actionable business insights.{" "}
+            <span className="font-bold text-white">Experienced</span> in
+            analytics, automation, and stakeholder engagement.{" "}
+            <span className="font-bold text-white">Always</span> seeking new
+            challenges to make a real-world impact.
           </div>
         </div>
         {/* Fun line */}
@@ -128,7 +138,7 @@ export default function Home() {
       </motion.section>
 
       {/* PROJECTS & SKILLS */}
-      <ProjectsSection />    
+      <ProjectsSection />
       <Skills />
     </main>
   );
