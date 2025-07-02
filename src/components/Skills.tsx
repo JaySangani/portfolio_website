@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import {
   SiPython,
   SiTableau,
@@ -25,15 +24,9 @@ export default function Skills() {
       id="skills"
       className="mt-24 w-full flex flex-col items-center justify-center"
     >
-      <motion.h2
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-        className="text-2xl md:text-3xl font-semibold mb-14 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent"
-      >
+      <h2 className="text-2xl md:text-3xl font-semibold mb-14 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
         My Tech Stack
-      </motion.h2>
+      </h2>
 
       <div className="grid grid-cols-3 grid-rows-2 gap-y-16 gap-x-16 max-w-4xl w-full mx-auto justify-items-center">
         {skills.map(({ name, icon: Icon, color }) => (

@@ -26,4 +26,22 @@ export const projectsData = [
       "Led planning and execution of university events. Managed a budget, improved engagement, and saved 18% in costs.",
     tech: ["Leadership", "Event Management"],
   },
+  {
+    title: "Dummy Data Dashboard",
+    slug: "dummy-data-dashboard",
+    org: "Self Project",
+    orgUrl: "#",
+    description:
+      "Created a fully interactive dashboard using dummy data to showcase advanced data visualization skills. Built with Next.js and Power BI.",
+    tech: ["Next.js", "Power BI", "Visualization"],
+  },
+  {
+    title: "Sample Analytics App",
+    slug: "sample-analytics-app",
+    org: "Personal",
+    orgUrl: "#",
+    description:
+      "Developed a sample analytics app that tracks user engagement metrics and provides real-time reporting.",
+    tech: ["React", "Analytics", "Reporting"],
+  },
 ];

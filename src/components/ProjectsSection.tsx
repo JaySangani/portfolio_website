@@ -1,23 +1,15 @@
-"use client";
-import { projectsData } from "@/data/projectsData";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import { projectsData } from "@/data/projectsData";
 
 export default function ProjectsSection() {
   const topProjects = projectsData.slice(0, 3);
 
   return (
     <section id="projects" className="mt-24 mb-24 w-full flex flex-col items-center">
-      <motion.h2
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-        className="text-2xl md:text-3xl font-semibold mb-10 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent"
-      >
+      <h2 className="text-2xl md:text-3xl font-semibold mb-10 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
         Projects & Achievements
-      </motion.h2>
-      <div className="flex flex-col gap-8 max-w-5xl w-full">
+      </h2>
+      <div className="flex flex-col gap-8 max-w-4xl w-full">
         {topProjects.map((project) => (
           <Link
             key={project.slug}
@@ -25,31 +17,25 @@ export default function ProjectsSection() {
             className="block"
             prefetch={false}
           >
-            <motion.div
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+            <div
               className="
                 rounded-2xl bg-white/10 p-8 shadow-2xl border border-blue-900/20 backdrop-blur-2xl w-full
                 transition-all duration-300 ease-in-out
                 hover:scale-105
                 hover:shadow-[0_0_24px_8px_rgba(34,197,243,0.25),0_2px_16px_2px_rgba(139,92,246,0.20)]
+                cursor-pointer
               "
             >
               <h3 className="text-xl font-bold mb-1 text-blue-200">{project.title}</h3>
-              {/* Use span here instead of <a> */}
               <span
                 onClick={e => {
-                  e.stopPropagation(); // Prevent triggering the tile click
+                  e.stopPropagation();
                   window.open(project.orgUrl, "_blank");
                 }}
                 className="text-sm text-blue-400 underline mb-2 inline-block cursor-pointer"
                 tabIndex={0}
                 onKeyDown={e => {
-                  if (e.key === "Enter") {
-                    window.open(project.orgUrl, "_blank");
-                  }
+                  if (e.key === "Enter") window.open(project.orgUrl, "_blank");
                 }}
               >
                 {project.org}
@@ -65,7 +51,7 @@ export default function ProjectsSection() {
                   </span>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </Link>
         ))}
       </div>
